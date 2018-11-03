@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr" ng-app="Portfolio">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cardo|Holtwood+One+SC|Julius+Sans+One|Monda|Montserrat+Alternates" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>Laura Levenhagen</title>
+</head>
+
+<body ng-controller="MainController as ctrl">
+  <nav>
+    <li ng-click="ctrl.toggleAboutModal()">
+      <a href="#">
+        <span class="first-letter" ng-mouseover="ctrl.showA();">A</span>
+        <span class="rest-of-word" ng-show="ctrl.showAbout">bout</span>
+      </a>
+    </li>
+    <li>
+      <a ng-click="ctrl.toggleResumeModal()" href="#">
+        <span class="first-letter" ng-mouseover="ctrl.showR();">R</span>
+        <span class="rest-of-word" ng-show="ctrl.showResume">esume</span>
+      </a>
+    </li>
+    <li>
+      <a ng-click="ctrl.toggleProjectModal()" href="#">
+        <span class="first-letter" ng-mouseover="ctrl.showP();">P</span>
+        <span class="rest-of-word" ng-show="ctrl.showProject">rojects</span>
+      </a>
+    </li>
+    <li class="fav">
+      <a ng-click="ctrl.toggleFavModal()" href="#">
+        <span class="first-letter" ng-mouseover="ctrl.showF();">F</span>
+        <span class="rest-of-word" ng-show="ctrl.showFav">avorites</span>
+      </a>
+    </li>
+    <p id="copyright">&copy 2018 Laura Levenhagen</p>
+  </nav>
+  <div class="container">
+  </div>
+  <div class="about-modal" ng-if="ctrl.aboutModal">
+    <div class="about-modal-container">
+      <p>As a full-stack developer and a multi-hobbyist with years of customer service under my belt, I believe in a well-rounded approach to creating personalized solutions for each client. I find inspiration in the differing strengths and
+        perspectives of my team, and I am committed to showing my appreciation and respect by consistently striving to better myself and what I have to offer.</p>
+      <p id="p2">
+        I'm a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
+      </p>
+      <h4 class="exit-modal" ng-click="ctrl.toggleAboutModal()">x</h4>
+    </div>
+  </div>
+</body>
+
+</html>
