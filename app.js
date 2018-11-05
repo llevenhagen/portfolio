@@ -42,7 +42,8 @@ this.toggleAboutModal = function(){
 this.toggleResumeModal = function(){
   this.resumeModal = !this.resumeModal;
 }
-this.togggleProjectModal = function(){
+this.toggleProjectModal = function(){
+  console.log('hello');
   this.projectModal = !this.projectModal;
 }
 this.toggleFavModal = function(){
