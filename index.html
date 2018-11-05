@@ -71,6 +71,7 @@
         ng-click="ctrl.toggleAboutModal()">Back to Main Page</h4>
   </div>
   <div class="resume-modal" ng-if="ctrl.resumeModal">
+    <embed id="pdf" src="images/LauraLevenhagen_Resume_WDI.pdf" width="100%" height="100%" type='application/pdf' />
     <h4 style=" font-size: 2vw;
   font-family: 'Bungee Inline', cursive;
   color: #C9292F;
@@ -78,11 +79,10 @@
   border: 1px solid var(--smoky-topaz);
   border-radius: .2vw;
   width: 35%;
-  margin: 0 auto 0;
+  margin: 2vw auto;
   padding: .2vw;
   background: var(--anti-flash-white);"
       ng-click="ctrl.toggleResumeModal()">Back to Main Page</h4>
-    <embed id="pdf" src="images/LauraLevenhagen_Resume_WDI.pdf" width="100%" height="100%" type='application/pdf' />
   </div>
   <div id="projects-modal" ng-if="ctrl.projectModal">
     <div class="project-modal-container">
