@@ -26,8 +26,8 @@ body {
 .container {
   width: 90%;
   background: pink;
-  background-image: url('images/whiter-background.png');
-  /* background-image: url('images/portfolio-background.png'); */
+  /* background-image: url('images/whiter-background.png'); */
+  background-image: url('images/portfolio-background.png');
   background-size: cover;
 }
 nav {
