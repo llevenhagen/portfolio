@@ -2,38 +2,38 @@ const app = angular.module('Portfolio', []);
 
 app.controller('MainController', ['$http', function($http){
 
-this.showAbout = false;
+this.showLinked = false;
 this.showResume = false;
 this.showProject = false;
-this.showFav = false;
+this.showGit = false;
 this.aboutModal = false;
 this.resumerModal = false;
 this.projectModal = false;
 this.favModal = false;
 
-this.showA = function(){
-  this.showAbout = !this.showAbout;
+this.showLinkedIn = function(){
+  this.showLinked = !this.showLinked;
   this.showResume = false;
   this.showProject = false;
-  this.showFav = false;
+  this.showGit = false;
 }
 this.showR = function(){
-  this.showAbout = false;
+  this.showLinked = false;
   this.showResume = !this.showResume;
   this.showProject = false;
-  this.showFav = false;
+  this.showGit = false;
 }
 this.showP = function(){
-  this.showAbout = false;
+  this.showLinked = false;
   this.showResume = false;
   this.showProject = !this.showProject;
-  this.showFav = false;
+  this.showGit = false;
 }
-this.showF = function(){
-  this.showAbout = false;
+this.showGithub = function(){
+  this.showLinked = false;
   this.showResume = false;
   this.showProject = false;
-  this.showFav = !this.showFav;
+  this.showGit = !this.showGit;
 }
 this.toggleAboutModal = function(){
   this.aboutModal = !this.aboutModal;
