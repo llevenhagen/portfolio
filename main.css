@@ -43,7 +43,7 @@ body {
   margin: auto auto 1vw auto;
   padding: 1.5vw 0;
   background: var(--anti-flash-white);
-  border-radius: .2vw;
+  border-radius: 0 0 .2vw .2vw;
 }
 
 #me {
