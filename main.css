@@ -13,22 +13,69 @@ body {
   display: inline-flex;
   width: 100%;
 }
-.container h1 {
+/* .container h1 {
   /* border-top: 1vw solid var(--anti-flash-white);
   border-bottom: 1vw solid var(--anti-flash-white); */
-  margin: 9.9vw auto;
+  /* margin: 9.9vw auto;
   color: var(--anti-flash-white);
   background: var(--pale-cornflower-blue);
   font-family: 'Bungee Inline', cursive;
   text-align: center;
   font-size: 8.5vw;
   line-height: 140%;
+} */
+.main-hello {
+  text-align: center;
+}
+
+.main-hello p {
+  /* background:var(--pale-cornflower-blue); */
+  color: var(--arsenic);
+  font-weight: 600;
+  padding: 1vw;
+  /* padding-bottom: 0; */
+  font-size: 1.4vw;
+  line-height: 150%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  width: 80%;
+  margin: .7vw auto;
+}
+#p-top {
+  text-align: center;
+  margin-bottom: 0vw;
+}
+#p-bottom {
+  text-align: center;
+  margin-top: -.5vw;
+}
+.me {
+  background: var(--anti-flash-white);
+  width: 83%;
+  margin: auto;
+  padding: 1.5vw 0;
+}
+#me {
+  height: 18vw;
+  border : .3vw solid var(--pale-cornflower-blue);
+  margin: .9vw 1vw auto 2.5vw;
+  border-radius: .2vw;
+  box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.49);
+}
+.main-hello h1 {
+  margin: .5vw auto 0;
+  color: var(--pale-cornflower-blue);
+  background: var(--melon);
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  font-size: 6.3vw;
+  line-height: 130%;
 }
 .container {
   width: 90%;
   background: pink;
   /* background-image: url('images/whiter-background.png'); */
-  background-image: url('images/portfolio-background.png');
+  /* background-image: url('images/portfolio-background.png'); */
+  background-image: url('images/cool_background.png');
   background-size: cover;
 }
 nav {
@@ -106,12 +153,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   padding-bottom: 0;
   font-size: 1.7vw;
   line-height: 150%;
-}
-#me {
-  height: 30vw;
-  margin: auto 1vw auto 2.5vw;
-  border-radius: .2vw;
-  box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.49);
 }
 .social-link img {
   height: 3vw;
@@ -223,6 +264,13 @@ font-family: 'Montserrat Alternates', sans-serif;
 #projects-modal footer p {
     color: var(--anti-flash-white);
     font-size: 1.25vw;
+}
+.hello {
+  font-weight: 700;
+  color: var(--arsenic);
+  font-size: 1.9vw;
+  line-height: 150%;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 font-family: 'Bungee Inline', cursive;
 font-family: 'Holtwood One SC', serif;
