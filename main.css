@@ -197,7 +197,7 @@ font-family: 'Montserrat Alternates', sans-serif;
   /* height: 100%; */
   margin-left: auto;
   margin-right: auto;
-  background: var(--arsenic);
+  background: #6693DE;
 }
 .projects-container {
   width: 100%;
