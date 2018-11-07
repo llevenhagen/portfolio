@@ -13,12 +13,12 @@
 <body ng-controller="MainController as ctrl">
   <div id="main">
   <nav>
-    <li ng-click="ctrl.toggleAboutModal()">
+    <!-- <li ng-click="ctrl.toggleAboutModal()">
       <a href="#">
         <span class="first-letter" ng-mouseover="ctrl.showA();">A</span>
         <span class="rest-of-word" ng-show="ctrl.showAbout">bout</span>
       </a>
-    </li>
+    </li> -->
     <li ng-click="ctrl.toggleResumeModal()">
       <a href="#">
         <span class="first-letter" ng-mouseover="ctrl.showR();">R</span>
@@ -37,12 +37,11 @@
         <span class="rest-of-word" ng-show="ctrl.showFav">avorites</span>
       </a>
     </li> -->
-    <p class="copyright">&copy 2018 Laura Levenhagen</p>
   </nav>
   <div class="container">
     <div class="main-hello">
       <h1>Laura Levenhagen</h1>
-        <div class="me">
+          <div class="me">
       <img id="me" src="images/me.jpg"/>
       <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California.
       I am passionate about providing people and businesses with a functional, aesthetically pleasing and modern site.</p>
@@ -55,10 +54,13 @@
     </div>
   </div>
 </div>
-  <div class="about-modal" ng-if="ctrl.aboutModal">
-    <div class="about-modal-container">
+<footer>
+  <p class="copyright">&copy 2018 Laura Levenhagen</p>
+</footer>
+  <!-- <div class="about-modal" ng-if="ctrl.aboutModal">
+    <div class="about-modal-container"> -->
       <!-- <img id="me" src="images/me.jpg"/> -->
-      <div style="margin-top: -1.75vw; margin-bottom: -1.75vw;">
+      <!-- <div style="margin-top: -1.75vw; margin-bottom: -1.75vw;">
       <p>Hello! My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California.
       I am passionate about providing people and businesses with a functional, aesthetically pleasing and modern site.</p>
       <p> I am also a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
@@ -81,7 +83,7 @@
     padding: .2vw;
     background: var(--anti-flash-white);"
         ng-click="ctrl.toggleAboutModal()">Back to Main Page</h4>
-  </div>
+  </div> -->
   <div class="resume-modal" ng-if="ctrl.resumeModal">
     <embed id="pdf" src="images/LauraLevenhagen_Resume_WDI.pdf" width="100%" height="100%" type='application/pdf' />
     <h4 style=" font-size: 2vw;
@@ -127,9 +129,9 @@
       padding: .2vw;
       background: var(--anti-flash-white);"
           ng-click="ctrl.toggleProjectModal()">Back to Main Page</h4>
-          <footer>
-          <p class="copyright2">  &copy 2018 Laura Levenhagen
-          </p></footer>
+          <!-- <footer class="project-footer">
+          <p class="copyright">  &copy 2018 Laura Levenhagen
+          </p></footer> -->
     </div>
     </div>
 </body>
