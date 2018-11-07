@@ -97,14 +97,14 @@ span {
 .first-letter {
   font-size: 5vw;
   font-family: 'Bungee Inline', cursive;
-  color: var(--anti-flash-white);
+  color: #6693DE;
 }
 a {
     text-decoration: none;
     color: var(--anti-flash-white);
 }
 .first-letter:hover {
-  color: #6693DE;
+  color: var(--anti-flash-white);
 }
 p {
 font-family: 'Montserrat Alternates', sans-serif;
