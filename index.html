@@ -12,57 +12,150 @@
 
 <body ng-controller="MainController as ctrl">
   <div id="main">
-  <nav>
-    <!-- <li ng-click="ctrl.toggleAboutModal()">
-      <a href="#">
+    <nav id='nav'>
+      <li id="a" ng-click="ctrl.scrollTo('main')">
         <span class="first-letter" ng-mouseover="ctrl.showA();">A</span>
         <span class="rest-of-word" ng-show="ctrl.showAbout">bout</span>
-      </a>
-    </li> -->
-    <li ng-click="ctrl.toggleResumeModal()">
-      <a href="#">
-        <span class="first-letter" ng-mouseover="ctrl.showR();">R</span>
-        <span class="rest-of-word" ng-show="ctrl.showResume">esume</span>
-      </a>
     </li>
-    <li ng-click="ctrl.toggleProjectModal()">
-      <a href="#">
-        <span class="first-letter" ng-mouseover="ctrl.showP();">P</span>
-        <span class="rest-of-word" ng-show="ctrl.showProject">rojects</span>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://www.linkedin.com/in/laura-levenhagen/"><span ng-mouseover="ctrl.showLinkedIn()" class="first-letter"</span>L<span ng-show="ctrl.showLinked" class="rest-of-word">inkedIn</span></a>
-    </li>
-    <li>
-      <a target="_blank" href="https://github.com/llevenhagen"><span ng-mouseover="ctrl.showGithub()" class="first-letter"</span>G<span ng-show="ctrl.showGit" class="rest-of-word">ithub</span></a>
-    <!-- <li class="fav">
+      <li>
+          <span ng-click="ctrl.scrollTo('middle')" class="first-letter" ng-mouseover="ctrl.showP();">P</span>
+          <span class="rest-of-word" ng-show="ctrl.showProject">rojects</span>
+      </li>
+      <li>
+        <a href="images/Laura_Levenhagen_Resume.pdf" target="_blank">
+          <span class="first-letter" ng-mouseover="ctrl.showR();">R</span>
+          <span class="rest-of-word" ng-show="ctrl.showResume">esume</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/laura-levenhagen/"><span ng-mouseover="ctrl.showLinkedIn()" class="first-letter" </span>L <span ng-show="ctrl.showLinked" class="rest-of-word">inkedIn</span></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/llevenhagen"><span ng-mouseover="ctrl.showGithub()" class="first-letter" </span>G <span ng-show="ctrl.showGit" class="rest-of-word">ithub</span></a>
+        <!-- <li class="fav">
       <a ng-click="ctrl.toggleFavModal()" href="#">
         <span class="first-letter" ng-mouseover="ctrl.showF();">F</span>
         <span class="rest-of-word" ng-show="ctrl.showFav">avorites</span>
       </a>
     </li> -->
-  </nav>
-  <div class="container">
-    <div class="main-hello">
-      <h1>Laura Levenhagen</h1>
-          <div class="me">
-      <img id="me" src="images/me.jpg"/>
-      <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California.
-      I am passionate about providing people and businesses with a functional, aesthetically pleasing and modern site.</p>
-      <p id="p-bottom"> I am also a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
-      Feel free to peruse my LinkedIn and Github.
-      </p>
+    </nav>
+    <div class="container">
+      <div class="main-hello">
+        <h1>Laura Levenhagen</h1>
+        <div class="me">
+          <hr class="hr-one"/>
+          <hr class="hr-two"/>
+          <div>
+          <img id="me" src="images/me.jpg" />
+          <hr class="hr-two"/>
+          <hr class="hr-one"/>
+          <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California.
+            I am passionate about providing people and businesses with a functional, aesthetically pleasing and modern site.</p>
+          <p id="p-bottom"> I am also a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
+            Feel free to peruse my LinkedIn and Github.
+          </p>
+          <hr class="hr-one"/>
+          <hr class="hr-two"/>
+          </div>
+          <hr class="hr-three"/>
+          <!-- <div id="projects-modal"> -->
+            <!-- <div class="project-modal-container"> -->
+            <div id="middle">
+            <hr class="hr-two"/>
+              <hr class="hr-one"/>
+              <h2>Projects</h2>
+            </div>
+            <div id="projects">
+              <div id="band-project" class="singular-project">
+                <img src="images/form-band-screenshot.jpg" /></br>
+                <p>Let's Form a Band is a game made with HTML, CSS, Javascript and jQuery. The game places two players against one another, each player trying to gather the necessary goods to 'win the record deal' first.</p>
+                <div class="project-links">
+                  <a href="https://llevenhagen.github.io/Let-s-Form-a-Band/" target="_blank">Live Link </a><span>|</span>
+                  <a href="https://github.com/llevenhagen/Let-s-Form-a-Band" target="_blank">Code</a>
+                </div>
+              </div>
+              <div id="dive-project" class="singular-project">
+                <img src="images/dive-log-index-page.png" /></br>
+                <p>The idea behind this project was to make an informative and useful application for scuba divers to find dive sites they would like to try, or to log their own experience at a dive site. It was made with HTML, CSS, Express, and
+                  MongoDB/Mongoose.</p>
+                <div class="project-links">
+                  <a href="https://sleepy-escarpment-62758.herokuapp.com/" target="_blank">Live Link </a><span>|</span>
+                  <a href="https://github.com/llevenhagen/DiveLog" target="_blank">Code</a>
+                </div>
+              </div>
+              <div id="speculook" class="singular-project">
+                <img src="images/speculook.png" /></br>
+                <p>Speculook was a group project,made for the WDIR Speculoos class of General Assembly to use as a way to keep in contact. We used HTML, CSS, and AngularJS. You may make your own account or sign in as 'Guest' with the password
+                  'guest'. </p>
+                <div class="project-links">
+                  <a href="https://speculook.herokuapp.com/?" target="_blank">Live Link </a><span>|</span>
+                  <a href="https://github.com/llevenhagen/speculook" target="_blank">Code</a>
+                </div>
+              </div>
+            </div>
+            <h4 style=" font-size: 2vw;
+            background: rgb(240, 241, 242, .6);
+            padding: 1vw;
+            border-radius: .2vw;
+            width: 50%;
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: var(--arsenic);
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: .2vw;
+            width: 35%;
+            margin: 1.5vw auto 0;
+            text-align: center;
+            padding: .2vw;"
+              ng-click="ctrl.scrollTo('main')">Back to Top</h4>
+
+          <!-- </div> -->
+        </div>
+        <div id="resume" class="resume-modal" ng-if="ctrl.resumeModal">
+          <img src="images/LAURA_RESUME_NONUM.png" />
+          <div class="buttons"><button style=" font-size: 2vw;
+      font-family: 'Bungee Inline', cursive;
+      color: #C9292F;
+      cursor: pointer;
+      border: 1px solid var(--smoky-topaz);
+      border-radius: .2vw;
+      width: 35%;
+      margin: 2vw auto;
+      padding: .2vw;
+      background: var(--anti-flash-white);"><a
+                style="color: #C9292F;" href="images/Laura_Levenhagen_Resume.pdf" target="_blank">Download PDF</a></button>
+            <h4 style=" font-size: 2vw;
+      font-family: 'Bungee Inline', cursive;
+      color: #C9292F;
+      cursor: pointer;
+      border: 1px solid var(--smoky-topaz);
+      border-radius: .2vw;
+      width: 35%;
+      margin: 2vw auto;
+      padding: .2vw;
+      background: var(--anti-flash-white);"
+              ng-click="ctrl.toggleResumeModal()">Back to Top </h4>
+          </div>
+          <footer style="margin-top: 2vw;">
+            <p style="margin-top: 0;
+            font-size: 1vw;
+            color: var(--anti-flash-white);
+            background: #23909F;
+            margin-bottom: 0;
+            text-align: left;
+            padding-left: 3vw;
+            line-height: 200%; padding-top: 0; padding-bottom: .5vw;">&copy
+              2018 Laura Levenhagen</p>
+          </footer>
+        </div>
+
+
+      </div>
     </div>
-    </div>
-  </div>
-</div>
-<footer>
-  <p class="copyright">&copy 2018 Laura Levenhagen</p>
-</footer>
-  <div class="resume-modal" ng-if="ctrl.resumeModal">
-    <img src="images/LAURA_RESUME_NONUM.png"/>
-    <div class="buttons"><button style=" font-size: 2vw;
+    <!-- <div class="resume-modal" ng-if="ctrl.resumeModal">
+      <img src="images/LAURA_RESUME_NONUM.png" />
+      <div class="buttons"><button style=" font-size: 2vw;
   font-family: 'Bungee Inline', cursive;
   color: #C9292F;
   cursor: pointer;
@@ -71,7 +164,9 @@
   width: 35%;
   margin: 2vw auto;
   padding: .2vw;
-  background: var(--anti-flash-white);"><a style="color: #C9292F;" href="images/Laura_Levenhagen_Resume.pdf" target="_blank">Download PDF</a></button> <h4 style=" font-size: 2vw;
+  background: var(--anti-flash-white);"><a
+            style="color: #C9292F;" href="images/Laura_Levenhagen_Resume.pdf" target="_blank">Download PDF</a></button>
+        <h4 style=" font-size: 2vw;
   font-family: 'Bungee Inline', cursive;
   color: #C9292F;
   cursor: pointer;
@@ -81,8 +176,8 @@
   margin: 2vw auto;
   padding: .2vw;
   background: var(--anti-flash-white);"
-      ng-click="ctrl.toggleResumeModal()">Back to Main Page</h4>
-    </div>
+          ng-click="ctrl.toggleResumeModal()">Back to Main Page</h4>
+      </div>
       <footer style="margin-top: 2vw;">
         <p style="margin-top: 0;
         font-size: 1vw;
@@ -91,55 +186,14 @@
         margin-bottom: 0;
         text-align: left;
         padding-left: 3vw;
-        line-height: 200%; padding-top: 0; padding-bottom: .5vw;">&copy 2018 Laura Levenhagen</p>
+        line-height: 200%; padding-top: 0; padding-bottom: .5vw;">&copy
+          2018 Laura Levenhagen</p>
       </footer>
+    </div> -->
   </div>
-  <div id="projects-modal" ng-if="ctrl.projectModal">
-    <div class="project-modal-container">
-      <div class="projects-container">
-      <div id="band-project" class="singular-project">
-          <img src="images/form-band-screenshot.jpg" /></br>
-          <a href="https://llevenhagen.github.io/Let-s-Form-a-Band/" target="_blank">Let's Form a Band!</a>
-          <p>Let's Form a Band is a game made with HTML, CSS, Javascript and jQuery. The game places two players against one another, each player trying to gather the necessary goods to 'win the record deal' first.</p>
-      </div>
-      <div id="dive-project" class="singular-project">
-          <img src="images/dive-log-index-page.png" /></br>
-          <a href="https://sleepy-escarpment-62758.herokuapp.com/" target="_blank">Dive Log</a>
-          <p>The idea behind this project was to make an informative and useful application for scuba divers to find dive sites they would like to try, or to log their own experience at a dive site. It was made with HTML, CSS, Express, and MongoDB/Mongoose.</p>
-      </div>
-      <div id="speculook" class="singular-project">
-          <img src="images/speculook.png" /></br>
-          <a href="https://speculook.herokuapp.com/?" target="_blank">Speculook</a>
-          <p>Speculook was a group project,made for the WDIR Speculoos class of General Assembly to use as a way to keep in contact. We used HTML, CSS, and AngularJS. You may make your own account or sign in as 'Guest' with the password 'guest'. </p>
-      </div>
-    </div>
-      <h4 style=" font-size: 2vw;
-      font-family: 'Bungee Inline', cursive;
-      color: #C9292F;
-      cursor: pointer;
-      border: 1px solid var(--smoky-topaz);
-      border-radius: .2vw;
-      width: 35%;
-      margin: 1.5vw auto 0;
-      text-align: center;
-      padding: .2vw;
-      background: var(--anti-flash-white);"
-          ng-click="ctrl.toggleProjectModal()">Back to Main Page</h4>
-          <!-- <footer class="project-footer">
-          <p class="copyright">  &copy 2018 Laura Levenhagen
-          </p></footer> -->
-          <footer style="margin-top: 4.1vw;">
-            <p style="margin-top: 4vw;
-            font-size: 1vw;
-            */color: var(--anti-flash-white);
-            background: #23909F;
-            margin-bottom: 0;
-            text-align: left;
-            padding-left: 3vw;
-            line-height: 200%; padding-top: 0; padding-bottom: .5vw;">&copy 2018 Laura Levenhagen</p>
-          </footer>
-    </div>
-    </div>
+  <footer>
+    <p class="copyright">&copy 2018 Laura Levenhagen</p>
+  </footer>
 </body>
 
 </html>
