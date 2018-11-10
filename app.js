@@ -1,4 +1,4 @@
-const app = angular.module('Portfolio', []);
+const app = angular.module('Portfolio', ['ngAnimate']);
 
 app.controller('MainController', ['$http', '$location', '$anchorScroll', function($http, $location, $anchorScroll){
 

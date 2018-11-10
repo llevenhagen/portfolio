@@ -13,6 +13,9 @@ body {
     background-size: cover;
     margin: 0 0 0 -.5vw;
 }
+a {
+  cursor: pointer;
+}
 #main {
   /* display: inline-flex; */
   width: 100%;
@@ -77,8 +80,14 @@ h4 {
 }
 #email {
   width: 6vw;
-  margin-bottom: 4vw;
+  margin-top: .1vw;
+  margin-bottom: 1vw;
+  border-top: .1vw solid #C9292F;
+  border-bottom: .1vw solid #C9292F;
+  padding-top: .3vw;
+  padding-bottom: .3vw;
 }
+
 hr {
   border: .1vw solid var(--pale-cornflower-blue);
   background-color: var(--pale-cornflower-blue);
@@ -95,7 +104,7 @@ hr {
 .hr-three {
   margin-top: 3vw;
   width: 40%;
-  border: .03vw solid var(--arsenic);
+  border: .01vw solid var(--arsenic);
   background-color: var(--arsenic);
 }
 
@@ -148,10 +157,13 @@ span {
   font-size: 3.2vw;
   font-family: 'Bungee Inline', cursive;
   color: var(--anti-flash-white);
+  cursor: pointer;
 }
 .rest-of-word {
   color: var(--anti-flash-white);
+  opacity: 1;
 }
+
 a {
     text-decoration: none;
     color: var(--anti-flash-white);
@@ -171,25 +183,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   margin-left: 4vw;
 }
 
-/* RESUME MODAL */
-.resume-modal {
-  background: #6693DE;
-  /* position: absolute; */
-  /* height: 150%; */
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-.buttons {
-  display: inline-flex;
-}
-.resume-modal img {
-  width: 64%;
-  margin: 2vw auto 0;
-}
-
-
 .project-modal-container {
   /* position: absolute; */
   margin-top: 0;
@@ -201,15 +194,15 @@ font-family: 'Montserrat Alternates', sans-serif;
   padding-top: 4vw;
 }
 #middle {
-  margin-top: 3vw;
+  margin-top: 6vw;
 }
 #middle h2 {
-  margin: 1.5vw auto 0;
+  margin: 2vw auto 0;
   color: var(--arsenic);
   /* background: rgb(102, 147, 222, .6); */
   font-family: 'Bungee Inline', cursive;
   text-align: center;
-  font-size: 3.3vw;
+  font-size: 3.4vw;
   line-height: 150%;
   /* width: 85%; */
   letter-spacing: 1vw;
@@ -311,9 +304,14 @@ rgb(255, 255, 255, .1);
 }
 #speculook .project-links, #speculook .project-links a {
 color: #E68E8E;
-
-
 }
+.project-links a:hover{
+  background: var(--anti-flash-white);
+}
+
+
+
+
 .hello {
   font-weight: 700;
   color: var(--arsenic);
@@ -333,6 +331,31 @@ color: #E68E8E;
   width: 98%;
   border-radius: .2vw;
 }
+/* ANIMATIONS */
+
+.rest-of-word.ng-enter {
+  animation: fade_in_animation 0.5s linear;
+  -webkit-animation: fade_in_animation 0.5s linear;
+}
+.rest-of-word.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+@keyframes fade_in_animation {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@-webkit-keyframes fade_in_animation {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#email:hover {
+  border-bottom: .1vw solid var(--melon);
+  border-top: .1vw solid var(--melon);
+}
+
+
+
+
 
 font-family: 'Bungee Inline', cursive;
 font-family: 'Holtwood One SC', serif;
