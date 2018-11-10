@@ -321,16 +321,16 @@ color: #E68E8E;
   line-height: 150%;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-.copyright  {
+.copyright   {
   margin-top: 0;
   font-size: 1.5vw;
   color: var(--anti-flash-white);
   /* background: rgb(201, 41, 47, .4); */
   margin-bottom: 0;
   text-align: right;
-  margin-right: 3vw;
+  /* padding-right: 3vw; */
   line-height: 200%;
-  width: 100%;
+  width: 98%;
   border-radius: .2vw;
 }
 
