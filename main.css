@@ -258,18 +258,18 @@ font-family: 'Montserrat Alternates', sans-serif;
   font-size: 1.2vw;
   line-height: 150%;
 }
+#projects h3 {
+  font-size: 2vw;
+}
 #projects img {
-  max-width: 80%;
-  max-height: 45%;
+  /* max-width: 15vw; */
+  height: 19.8vw;
   border-radius: .5vw;
   border: .5vw solid var(--anti-flash-white);
   /* margin-bottom: .5vw; */
 }
-#projects a:hover {
-  color: var(--pale-cornflower-blue);
-}
-
 .project-links a {
+  font-size: 1.4vw;
   margin-top: -1.3vw;
   background: rgb(240, 241, 242, .6);
   padding: 1vw;
@@ -352,7 +352,12 @@ color: #E68E8E;
   border-bottom: .1vw solid var(--melon);
   border-top: .1vw solid var(--melon);
 }
-
+#back-to-top {
+  color: #C9292F;;
+}
+#back-to-top:hover {
+  color: var(--arsenic);
+}
 
 
 
