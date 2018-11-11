@@ -396,8 +396,16 @@ h4 {
     display: inline-flex;
     border-left: .35vw solid #6693DE;
     border-radius: .5vw;
-    margin: auto auto auto .5vw;
+    margin: auto auto auto .4vw;
     padding: 4vw 0vw 0vw 0vw;
+    background: var(--arsenic);
+  }
+  .first-letter {
+    font-size: 5vw;
+  }
+  .rest-of-word {
+    font-size: 3vw;
+    opacity: 1;
   }
   hr {
     opacity: 0;
