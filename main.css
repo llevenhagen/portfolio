@@ -553,6 +553,7 @@ only screen and (max-width: 760px),
   }
   #projects h3 {
     font-size: 3.5vw;
+    background: var(--anti-flash-white);
   }
   #projects img {
     width: 72%;
@@ -570,6 +571,7 @@ only screen and (max-width: 760px),
   }
   .project-links a {
     font-size: 3vw;
+    background: var(--anti-flash-white);
   }
   #middle h2 {
     font-size: 6vw;
@@ -717,6 +719,7 @@ only screen and (max-width: 760px),
   }
   #projects h3 {
     font-size: 5vw;
+    background: var(--anti-flash-white);
   }
   #projects img {
     width: 75%;
@@ -734,6 +737,7 @@ only screen and (max-width: 760px),
   }
   .project-links a {
     font-size: 5vw;
+    background: var(--anti-flash-white);
   }
   h2 {
     padding-top: 6vw;
