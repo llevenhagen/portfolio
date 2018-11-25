@@ -10,17 +10,18 @@
   <script src="app.js" charset="utf-8"></script>
   <title>Laura Levenhagen</title>
 </head>
-<link rel="shortcut icon" type="image/jpg" href="images/fav-icon.jpg"/>
+<link rel="shortcut icon" type="image/jpg" href="images/fav-icon.jpg" />
+
 <body ng-controller="MainController as ctrl">
   <div id="main">
     <nav id='nav'>
       <li id="a" ng-click="ctrl.scrollTo('main')">
         <span class="first-letter" ng-mouseover="ctrl.showA();">A</span>
         <span class="rest-of-word" ng-if="ctrl.showAbout">bout</span>
-    </li>
+      </li>
       <li>
-          <span ng-click="ctrl.scrollTo('middle')" class="first-letter" ng-mouseover="ctrl.showP();">P</span>
-          <span class="rest-of-word" ng-if="ctrl.showProject">rojects</span>
+        <span ng-click="ctrl.scrollTo('middle')" class="first-letter" ng-mouseover="ctrl.showP();">P</span>
+        <span class="rest-of-word" ng-if="ctrl.showProject">rojects</span>
       </li>
       <li>
         <a href="images/Laura_Levenhagen_Resume.pdf" target="_blank">
@@ -44,69 +45,79 @@
       <div class="main-hello">
         <h1 id="comp-h1">Laura Levenhagen</h1>
         <div class="white">
-          <hr class="hr-one"/>
-          <hr class="hr-two"/>
+          <hr class="hr-one" />
+          <hr class="hr-two" />
           <div id="me-box">
-          <img id="me" src="images/me.jpg" />
-          <h1 id="mobile-h1">Laura Levenhagen</h1>
-          <hr class="hr-two"/>
-          <hr class="hr-one"/>
-          <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California. I am passionate about providing people and businesses with a functional, aesthetically pleasing and modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
-          <p> In addition to HTML, CSS, and Javascript, I am trained in jQuery and Ruby, as well as MongoDB, Postgresql, and the React, AngularJS, and NodeJS frameworks. </p>
-          <p id="p-bottom"> In my free time, I am a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
-          </p>
-          <!-- <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img id="email" src="images/email.jpg"></img></a> -->
-          <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img  id="email" src="images/email.jpg"></img></a>
-          <hr class="hr-one"/>
-          <hr class="hr-two"/>
+            <img id="me" src="images/me.jpg" />
+            <h1 id="mobile-h1">Laura Levenhagen</h1>
+            <hr class="hr-two" />
+            <hr class="hr-one" />
+            <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California. I am passionate about providing people and businesses with a functional, aesthetically pleasing and
+              modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
+            <p> In addition to HTML, CSS, and Javascript, I am trained in jQuery and Ruby, as well as MongoDB, Postgresql, and the React, AngularJS, and NodeJS frameworks. </p>
+            <p id="p-bottom"> In my free time, I am a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
+            </p>
+            <!-- <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img id="email" src="images/email.jpg"></img></a> -->
+            <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img id="email" src="images/email.jpg"></img></a>
+            <hr class="hr-one" />
+            <hr class="hr-two" />
           </div>
           <!-- <hr class="hr-three"/> -->
           <!-- <div id="projects-modal"> -->
-            <!-- <div class="project-modal-container"> -->
-            <div id="middle">
-            <hr class="hr-two"/>
-              <hr class="hr-one"/>
-              <h2>Projects</h2>
-            </div>
-            <div id="projects">
-              <div id="band-project" class="singular-project">
-                <h3>Let's Form a Band</h3>
-                <img src="images/form-band-screenshot.jpg" /></br>
-                <p>Let's Form a Band is a game made with HTML, CSS, Javascript and jQuery. The game places two players against one another, each player trying to gather the necessary goods to 'win the record deal' first.</p>
-                <div class="project-links">
-                  <a href="https://llevenhagen.github.io/Let-s-Form-a-Band/" target="_blank">Live Link </a><span>|</span>
-                  <a href="https://github.com/llevenhagen/Let-s-Form-a-Band" target="_blank">Code</a>
-                </div>
-              </div>
-              <div id="dive-project" class="singular-project">
-                  <h3>Dive Log</h3>
-                <img src="images/dive-log-index-page.png" /></br>
-                <p>The idea behind this project was to make an informative and useful application for scuba divers to find dive sites they would like to try, or to log their own experience at a dive site. It was made with HTML, CSS, Express, and
-                  MongoDB/Mongoose.</p>
-                <div class="project-links">
-                  <a href="https://sleepy-escarpment-62758.herokuapp.com/" target="_blank">Live Link </a><span>|</span>
-                  <a href="https://github.com/llevenhagen/DiveLog" target="_blank">Code</a>
-                </div>
-              </div>
-              <div id="speculook" class="singular-project">
-                <h3>Speculook</h3>
-                <img src="images/speculook.png" /></br>
-                <p>Speculook was a group project,made for the WDIR Speculoos class of General Assembly to use as a way to keep in contact. We used HTML, CSS, and AngularJS. You may make your own account or sign in as 'Guest' with the password
-                  'guest'. </p>
-                <div class="project-links">
-                  <a href="https://speculook.herokuapp.com/?" target="_blank">Live Link </a><span>|</span>
-                  <a href="https://github.com/llevenhagen/speculook" target="_blank">Code</a>
-                </div>
+          <!-- <div class="project-modal-container"> -->
+          <div id="middle">
+            <hr class="hr-two" />
+            <hr class="hr-one" />
+            <h2>Projects</h2>
+          </div>
+          <div id="projects">
+            <div id="band-project" class="singular-project">
+              <h3>Let's Form a Band</h3>
+              <img src="images/form-band-screenshot.jpg" /></br>
+              <p>Let's Form a Band is a game made with HTML, CSS, Javascript and jQuery. The game places two players against one another, each player trying to gather the necessary goods to 'win the record deal' first.</p>
+              <div class="project-links">
+                <a href="https://llevenhagen.github.io/Let-s-Form-a-Band/" target="_blank">Live Link </a><span>|</span>
+                <a href="https://github.com/llevenhagen/Let-s-Form-a-Band" target="_blank">Code</a>
               </div>
             </div>
-            <h4 id="back-to-top"
-              ng-click="ctrl.scrollTo('main')">Back to Top</h4>
-              <footer>
-                <p class="copyright">
-                  Built with AngularJS,
-                  &copy 2018 Laura Levenhagen
-                </p>
-              </footer>
+            <div id="dive-project" class="singular-project">
+              <h3>Dive Log</h3>
+              <img src="images/dive-log-index-page.png" /></br>
+              <p>The idea behind this project was to make an informative and useful application for scuba divers to find dive sites they would like to try, or to log their own experience at a dive site. It was made with HTML, CSS, Express, and
+                MongoDB/Mongoose.</p>
+              <div class="project-links">
+                <a href="https://sleepy-escarpment-62758.herokuapp.com/" target="_blank">Live Link </a><span>|</span>
+                <a href="https://github.com/llevenhagen/DiveLog" target="_blank">Code</a>
+              </div>
+            </div>
+            <div id="speculook" class="singular-project">
+              <h3>Speculook</h3>
+              <img src="images/speculook.png" /></br>
+              <p>Speculook was a group project,made for the WDIR Speculoos class of General Assembly to use as a way to keep in contact. We used HTML, CSS, and AngularJS. You may make your own account or sign in as 'Guest' with the password
+                'guest'. </p>
+              <div class="project-links">
+                <a href="https://speculook.herokuapp.com/?" target="_blank">Live Link </a><span>|</span>
+                <a href="https://github.com/llevenhagen/speculook" target="_blank">Code</a>
+              </div>
+            </div>
+            <div id="christmas" class="singular-project">
+              <h3>Christmas Wish List</h3>
+              <img src="images/christmas-screen-shot.png" /></br>
+              <p>
+                Christmas Wish List is, in affect, a Christmas gift registry where you can add what you want and your friends and family can go in and check what they plan on buying you. The project was built with React and Ruby on Rails.</p>
+              <div class="project-links">
+                <a href="https://obscure-eyrie-20259.herokuapp.com/" target="_blank">Live Link </a><span>|</span>
+                <a href="https://github.com/llevenhagen/ChristmasWishList" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+          <h4 id="back-to-top" ng-click="ctrl.scrollTo('main')">Back to Top</h4>
+          <footer>
+            <p class="copyright">
+              Built with AngularJS,
+              &copy 2018 Laura Levenhagen
+            </p>
+          </footer>
         </div>
       </div>
     </div>

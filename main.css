@@ -325,6 +325,15 @@ hr {
   color: #E68E8E;
 }
 
+/* christmas wish list project */
+#christmas {
+  background: #7DA7C2;
+  color: var(--arsenic);
+}
+#christmas .project-links, #christmas .project-links a {
+  color: #447696;
+}
+
 /* BACK TO TOP BUTTON */
 h4 {
   font-size: 2vw;
