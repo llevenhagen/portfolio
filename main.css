@@ -259,7 +259,7 @@ hr {
   /* margin-bottom: .5vw; */
 }
 #projects img:hover {
-  transform: scale(2);
+  transform: scale(1.5);
   transition: 1s ease-in-out;
 }
 #projects p {
@@ -336,7 +336,14 @@ hr {
 #christmas .project-links, #christmas .project-links a {
   color: #447696;
 }
-
+/* Twin ritual page */
+#twinritual {
+  background: #FA8B73;
+  color: var(--arsenic);
+}
+#twinritual .project-links, #twinritual .project-links a {
+  color: #E46C52;
+}
 /* BACK TO TOP BUTTON */
 h4 {
   font-size: 2vw;
