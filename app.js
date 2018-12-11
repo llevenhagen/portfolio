@@ -59,17 +59,17 @@ this.showGithub = function(){
   this.showGit = !this.showGit;
   this.showAbout = false;
 }
-this.toggleAboutModal = function(){
-  this.aboutModal = !this.aboutModal;
-  console.log('you clicked about');
-}
-this.toggleResumeModal = function(){
-  this.resumeModal = !this.resumeModal;
-}
-this.toggleProjectModal = function(){
-  console.log('hello');
-  this.projectModal = !this.projectModal;
-}
+// this.toggleAboutModal = function(){
+//   this.aboutModal = !this.aboutModal;
+//   console.log('you clicked about');
+// }
+// this.toggleResumeModal = function(){
+//   this.resumeModal = !this.resumeModal;
+// }
+// this.toggleProjectModal = function(){
+//   console.log('hello');
+//   this.projectModal = !this.projectModal;
+// }
 this.toggleFavModal = function(){
   this.favModal = !this.favModal;
 }
