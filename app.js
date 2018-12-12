@@ -14,8 +14,8 @@ this.scrollTo = function(id) {
 
 var intViewportWidth = document.body.clientWidth;
 console.log(intViewportWidth);
-let big = intViewportWidth < 970;
-let small = intViewportWidth >= 969;
+let big = intViewportWidth > 1000;
+let small = intViewportWidth <= 1000;
 if (big) {
   console.log('the screen is more than 760');
   this.showAbout = false;
