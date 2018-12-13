@@ -186,6 +186,12 @@ console.log(imageDivArray);
 
 
 this.openDiv = function(div) {
+  this.images[0].div.showBandDiv = false;
+  this.images[1].div.showDiveDiv = false;
+  this.images[2].div.showSpecuDiv = false;
+  this.images[3].div.showChristDiv = false;
+  this.images[4].div.showTrDiv = false;
+
   console.log('you clicked one of the images', div)
   console.log(div);
   for (item in imageDivArray) {
