@@ -95,7 +95,7 @@ app.controller('MainController', ['$http', '$location', '$anchorScroll', functio
   // click event on right makes all three images move right
   // when you click on an image, the project div appears with LINKS
   let image = 0;
-  var images = [];
+  this.images = [];
 
   this.showBandDiv = false;
   this.showDiveDiv = false;
@@ -103,55 +103,85 @@ app.controller('MainController', ['$http', '$location', '$anchorScroll', functio
   this.showChristDiv = false;
   this.showTrDiv = false;
 
-  images[0] = {img: 'images/band-project.png', div: 'showBandDiv'}
-  images[1] = {img: 'images/dive-project.png', div: 'showDiveDiv'}
-  images[2] = {img: 'images/specu-project.png', div: 'showSpecuDiv'}
-  images[3] = {img: 'images/christmas-project.png', div: 'showChristDiv'}
-  images[4] = {img: 'images/tr-project.png', div: 'showTrDiv'}
+  this.images[0] = {img: 'images/band-project.png', div:
+  { showBandDiv: false,
+    showDiveDiv: false,
+    showSpecuDiv: false,
+    showChristDiv: false,
+    showTrDiv: false
+  }}
+  this.images[1] = {img: 'images/dive-project.png', div:
+  { showDiveDiv: false,
+    showBandDiv: false,
+    showSpecuDiv: false,
+    showChristDiv: false,
+    showTrDiv: false
+  }}
+  this.images[2] = {img: 'images/specu-project.png', div:
+  { showSpecuDiv: false,
+    showBandDiv: false,
+    showDiveDiv: false,
+    showChristDiv: false,
+    showTrDiv: false
+  }}
+  this.images[3] = {img: 'images/christmas-project.png', div:
+  { showChristDiv: false,
+    showBandDiv: false,
+    showDiveDiv: false,
+    showSpecuDiv: false,
+    showTrDiv: false
+  }}
+  this.images[4] = {img: 'images/tr-project.png', div:
+  { showTrDiv: false,
+    showBandDiv: false,
+    showDiveDiv: false,
+    showSpecuDiv: false,
+    showChristDiv: false
+  }}
 
 let image1Div;
 let image2Div;
 let image3Div;
   this.moveImages = function(direction) {
     imageDivArray = []
-    console.log('you clicked an arrow', image, images.length);
+    console.log('you clicked an arrow', image, this.images.length);
     if (direction == "right") {
       console.log(document.peruse3.src);
-      if (image === images.length - 3) {
+      if (image === this.images.length - 3) {
 
-      } else if (image !== images.length - 3) {
+      } else if (image !== this.images.length - 3) {
         image++
         console.log(image);
-        document.peruse1.src = images[image].img;
-        document.peruse2.src = images[image + 1].img;
-        document.peruse3.src = images[image + 2].img;
-        image1Div = images[image].div;
-        image2Div = images[image+1].div;
-        image3Div = images[image+2].div;
-        imageDivArray = [{name: 'image1Div'}, {name: 'image2Div'}, {name: 'image3Div'}]
+        document.peruse1.src = this.images[image].img;
+        document.peruse2.src = this.images[image + 1].img;
+        document.peruse3.src = this.images[image + 2].img;
+        image1Div = this.images[image].div;
+        image2Div = this.images[image+1].div;
+        image3Div = this.images[image+2].div;
+        imageDivArray = [{name: 'image1Div', value: image1Div}, {name: 'image2Div', value: image2Div}, {name: 'image3Div', value: image3Div}]
       }
     } else if (direction == "left") {
       if (image === 0) {
 
       } else if (image > 0) {
         image--
-        document.peruse1.src = images[image].img;
-        document.peruse2.src = images[image + 1].img;
-        document.peruse3.src = images[image + 2].img;
-        image1Div = images[image].div;
-        image2Div = images[image+1].div;
-        image3Div = images[image+2].div;
-        imageDivArray = [{name: 'image1Div'}, {name: 'image2Div'}, {name: 'image3Div'}]
+        document.peruse1.src = this.images[image].img;
+        document.peruse2.src = this.images[image + 1].img;
+        document.peruse3.src = this.images[image + 2].img;
+        image1Div = this.images[image].div;
+        image2Div = this.images[image+1].div;
+        image3Div = this.images[image+2].div;
+        imageDivArray = [{name: 'image1Div', value: image1Div}, {name: 'image2Div', value: image2Div}, {name: 'image3Div', value: image3Div}]
       }
     }
   }
-    document.peruse1.src = images[image].img;
-    document.peruse2.src = images[image + 1].img;
-    document.peruse3.src = images[image + 2].img;
-    image1Div = images[image].div;
-    image2Div = images[image+1].div;
-    image3Div = images[image+2].div;
-    imageDivArray = [{name: 'image1Div'}, {name: 'image2Div'}, {name: 'image3Div'}]
+    document.peruse1.src = this.images[image].img;
+    document.peruse2.src = this.images[image + 1].img;
+    document.peruse3.src = this.images[image + 2].img;
+    image1Div = this.images[image].div;
+    image2Div = this.images[image+1].div;
+    image3Div = this.images[image+2].div;
+    imageDivArray = [{name: 'image1Div', value: image1Div}, {name: 'image2Div', value: image2Div}, {name: 'image3Div', value: image3Div}]
 console.log(imageDivArray);
 
 
@@ -161,13 +191,17 @@ this.openDiv = function(div) {
   for (item in imageDivArray) {
     console.log(imageDivArray[item].name);
     if (div == imageDivArray[item].name){
-      console.log('these are equal');
+      let prop = Object.keys(imageDivArray[item].value)[0];
+      console.log(prop);
+      (imageDivArray[item].value)[prop] = true;
+      console.log((imageDivArray[item].value)[prop]);
+
     }
   }
 }
 
 // next:
-// found when they are equal, so pull the current value of that key from imagedivArray and make that this..... true 
+// found when they are equal, so pull the current value of that key from imagedivArray and make that this..... true
 
 
 
