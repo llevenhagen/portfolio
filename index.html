@@ -79,11 +79,11 @@
             <h2>Projects</h2>
           </div>
           <div id="peruse">
-            <img ng-click="ctrl.moveImages('left')" class="arrow-image" src="images/left-arrow.png">
+            <img id="left-arrow" ng-mouseover="ctrl.changeImg('left')" ng-mouseleave="ctrl.changeImgBack('left')" ng-click="ctrl.moveImages('left')" class="arrow-image" src="images/left-arrow.png">
             <img ng-click="ctrl.openDiv('image1Div')" class="peruse-image" name="peruse1">
             <img ng-click="ctrl.openDiv('image2Div')" class="peruse-image" name="peruse2">
             <img ng-click="ctrl.openDiv('image3Div')" class="peruse-image" name="peruse3">
-            <img ng-click="ctrl.moveImages('right')" class="arrow-image" src="images/right-arrow.png">
+            <img id="right-arrow" ng-mouseover="ctrl.changeImg('right')" ng-mouseleave="ctrl.changeImgBack('right')" ng-click="ctrl.moveImages('right')" class="arrow-image" src="images/right-arrow.png">
           </div>
           <div id="projects">
             <div ng-if="ctrl.images[0].div.showBandDiv" id="band-project" class="singular-project">

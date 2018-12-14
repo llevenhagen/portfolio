@@ -71,72 +71,25 @@ app.controller('MainController', ['$http', '$location', '$anchorScroll', functio
   }
   console.log(this.showAbout);
 
-  //
-  // this.toggleAboutModal = function() {
-  //   this.aboutModal = !this.aboutModal;
-  //   console.log('you clicked about');
-  // }
-  // this.toggleResumeModal = function() {
-  //   this.resumeModal = !this.resumeModal;
-  // }
-  // this.toggleProjectModal = function() {
-  //   console.log('hello');
-  //   this.projectModal = !this.projectModal;
-  // }
-  // this.toggleFavModal = function() {
-  //   this.favModal = !this.favModal;
-  // }
-
-  // create div that only shows on browser not mobile
-  // put 3 images inside div
-  // create array of images, have the three images be the first three
-  // add arrow on both sides with click event
-  // click event on left makes all three images move left
-  // click event on right makes all three images move right
-  // when you click on an image, the project div appears with LINKS
   let image = 0;
   this.images = [];
 
-  this.showBandDiv = false;
-  this.showDiveDiv = false;
-  this.showSpecuDiv = false;
-  this.showChristDiv = false;
-  this.showTrDiv = false;
+
 
   this.images[0] = {img: 'images/band-project.png', div:
   { showBandDiv: false,
-    showDiveDiv: false,
-    showSpecuDiv: false,
-    showChristDiv: false,
-    showTrDiv: false
   }}
   this.images[1] = {img: 'images/dive-project.png', div:
   { showDiveDiv: false,
-    showBandDiv: false,
-    showSpecuDiv: false,
-    showChristDiv: false,
-    showTrDiv: false
   }}
   this.images[2] = {img: 'images/specu-project.png', div:
   { showSpecuDiv: false,
-    showBandDiv: false,
-    showDiveDiv: false,
-    showChristDiv: false,
-    showTrDiv: false
   }}
   this.images[3] = {img: 'images/christmas-project.png', div:
   { showChristDiv: false,
-    showBandDiv: false,
-    showDiveDiv: false,
-    showSpecuDiv: false,
-    showTrDiv: false
   }}
   this.images[4] = {img: 'images/tr-project.png', div:
   { showTrDiv: false,
-    showBandDiv: false,
-    showDiveDiv: false,
-    showSpecuDiv: false,
-    showChristDiv: false
   }}
 
 let image1Div;
@@ -206,9 +159,20 @@ this.openDiv = function(div) {
   }
 }
 
-// next:
-// found when they are equal, so pull the current value of that key from imagedivArray and make that this..... true
-
-
-
+this.changeImg = function(direction) {
+  if (direction === 'left') {
+    document.querySelector('#left-arrow').setAttribute('src', 'images/red-left-arrow.png')
+  }
+  if (direction === 'right') {
+    document.querySelector('#right-arrow').setAttribute('src', 'images/red-right-arrow.png')
+}
+}
+this.changeImgBack = function(direction) {
+  if (direction === 'left') {
+    document.querySelector('#left-arrow').setAttribute('src', 'images/left-arrow.png')
+  }
+  if (direction === 'right') {
+    document.querySelector('#right-arrow').setAttribute('src', 'images/right-arrow.png')
+  }
+}
 }])
