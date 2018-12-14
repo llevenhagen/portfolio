@@ -232,7 +232,7 @@ hr {
 .peruse-image {
   height: 95%;
   width: 25%;
-  border: .2vw solid var(--arsenic);
+  /* border: .2vw solid var(--arsenic); */
 }
 .arrow-image {
   width: 5.5vw;
