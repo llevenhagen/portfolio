@@ -64,6 +64,17 @@ a {
 /* MAIN */
 
 /* TITLE H1 */
+#name-image {
+  text-align: center;
+  width: 79.9%;
+  margin: 2vw auto -1vw 6.7vw;
+  padding-left: 2.3vw;
+  padding-right: 2.3vw;
+  padding-top: 2vw;
+  background: #E86460;
+  border-radius: .5vw .5vw 0 0;
+  border-bottom: .2vw solid #E86460;
+}
 #comp-h1 {
   opacity: 1;
   margin: 1vw auto 0;
@@ -79,7 +90,7 @@ a {
   border-radius: .2vw .2vw 0 0;
 }
 
-#mobile-h1 {
+#mobile-h1-img {
   opacity: 0;
   position: fixed;
 }
@@ -479,14 +490,14 @@ only screen and (max-width: 760px),
   nav {
     position: relative;
     height: 12vw;
-    width: 99.6%;
+    width: 99.99%;
     display: inline-flex;
     border: none;
-    border-left: .2vw solid #6693DE;
-    border-right: .2vw solid #6693DE;
-    border-radius: .5vw;
+    /* border-left: .2vw solid #6693DE;
+    border-right: .2vw solid #6693DE; */
+    border-radius: .5vw .5vw 0 0;
     margin: auto auto auto .5vw;
-    padding: 3vw 0vw 1vw 0vw;
+    padding: 3vw 0vw 0vw 0vw;
     background: #202126;
   }
 
@@ -533,7 +544,7 @@ only screen and (max-width: 760px),
     opacity: 0;
   }
 
-  #ipad-h1 {
+  /* #ipad-h1 {
     position: relative;
     opacity: 1;
     margin: -.7vw auto;
@@ -547,8 +558,16 @@ only screen and (max-width: 760px),
     padding-bottom: 1vw;
     width: 100%;
     border-radius: .2vw .2vw 0 0;
+  } */
+  #name-image {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2vw;
+    margin: auto;
+    margin-bottom: -2.7vw;
   }
-  #mobile-h1 {
+  #mobile-h1-img {
     position: fixed;
     opacity: 0;
   }
@@ -720,7 +739,7 @@ only screen and (max-width: 760px),
     background: none;
   }
 
-  #comp-h1 {
+  #comp-h1, #name-image {
     position: fixed;
     opacity: 0;
   }
@@ -728,7 +747,7 @@ only screen and (max-width: 760px),
     position: fixed;
     opacity: 0;
   }
-  #mobile-h1 {
+  #mobile-h1-img {
     position: relative;
     opacity: 1;
     margin: 0 auto 3vw;
