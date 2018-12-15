@@ -154,6 +154,12 @@ a {
   padding-top: .3vw;
   padding-bottom: .3vw;
 }
+#facebook, #instagram {
+  width: 5vw;
+  margin: auto 5vw;
+  margin-top: .1vw;
+  margin-bottom: 1vw;
+}
 
 /* HRs */
 hr {
@@ -444,7 +450,9 @@ h4 {
   border-bottom: .1vw solid var(--melon);
   border-top: .1vw solid var(--melon);
 }
-
+#facebook:hover, #instagram:hover {
+opacity: .8;
+}
 #back-to-top {
   color: #C9292F;
   ;
@@ -579,6 +587,9 @@ only screen and (max-width: 760px),
 
   #email {
     width: 10vw;
+  }
+  #facebook, #instagram {
+  width: 7vw;
   }
   .white footer p{
     font-size: 2vw;
@@ -757,10 +768,13 @@ only screen and (max-width: 760px),
   .hello {
     font-size: 5vw;
   }
-  #email {
+  #email, #facebook, #instagram {
     width: 15vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
+  }
+  #facebook, #instagram {
+  width: 10vw;
   }
   #middle h2 {
     margin-top: -2vw;

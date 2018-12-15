@@ -52,21 +52,24 @@
           <hr class="hr-two" /> -->
           <div id="me-box">
             <p id="p-top"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California. I am passionate about providing people and businesses with a functional, aesthetically pleasing
-            and modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
+              and modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
             <!-- <div id="flex-box"> -->
-              <img id="me" src="images/me.jpg" />
-              <h1 id="mobile-h1">Laura Levenhagen</h1>
+            <img alt="Laura Levenhagen" id="me" src="images/me.jpg" />
+            <h1 id="mobile-h1">Laura Levenhagen</h1>
             <!-- </div> -->
-              <!-- <hr class="hr-two" />
+            <!-- <hr class="hr-two" />
             <hr class="hr-one" /> -->
-            <p id="p-top-mobile"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California. I am passionate about providing people and businesses with a functional, aesthetically pleasing
-            and modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
-              <p id="p-middle"> In addition to HTML, CSS, and Javascript, I am trained in jQuery and Ruby, as well as MongoDB, Postgresql, Node.js and the React AngularJS, Vue.js, and Express frameworks. </p>
-              <p id="p-bottom"> In my free time, I am a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
-              </p>
+            <p id="p-top-mobile"><span class="hello">Hello!</span> My name is Laura Levenhagen. I'm a full-stack developer located in San Diego, California. I am passionate about providing people and businesses with a functional, aesthetically
+              pleasing
+              and modern site, and I have made special effort to learn and enact mobile resizing in my work. </p>
+            <p id="p-middle"> In addition to HTML, CSS, and Javascript, I am trained in jQuery, Node.js, MongoDB, Postgresql, and the React AngularJS, Vue.js, and Express frameworks. </p>
+            <p id="p-bottom"> In my free time, I am a musician, a scuba diver, and a lover of cats and literature - preferably at the same time. I enjoy community and teamwork, and I am determined to test my limits and grow my abilities every day.
+            </p>
             <!-- <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img id="email" src="images/email.jpg"></img></a> -->
-            <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img id="email" src="images/email.jpg"></img></a>
-                <hr class="hr-two" />
+            <a target="_blank" id="facebook-a" href="https://www.facebook.com/laura.levenhagen"><img alt="facebook link" id="facebook" src="images/Wumi_Facebook.png"></img></a>
+            <a id="email-a" href="mailto:lauramlevenhagen@gmail.com"><img alt="email link" id="email" src="images/email.jpg"></img></a>
+            <a target="_blank" id="instagram-a" href="https://www.instagram.com/laurel_leven_/"><img alt="instagram link" id="instagram" src="images/Wumi_Instagram.png"></img></a>
+            <hr class="hr-two" />
             <hr class="hr-one" />
             <hr class="hr-two" />
           </div>
@@ -79,16 +82,16 @@
             <h2>Projects</h2>
           </div>
           <div id="peruse">
-            <img id="left-arrow" ng-mouseover="ctrl.changeImg('left')" ng-mouseleave="ctrl.changeImgBack('left')" ng-click="ctrl.moveImages('left')" class="arrow-image" src="images/left-arrow.png">
-            <img ng-click="ctrl.openDiv('image1Div')" class="peruse-image" name="peruse1">
-            <img ng-click="ctrl.openDiv('image2Div')" class="peruse-image" name="peruse2">
-            <img ng-click="ctrl.openDiv('image3Div')" class="peruse-image" name="peruse3">
-            <img id="right-arrow" ng-mouseover="ctrl.changeImg('right')" ng-mouseleave="ctrl.changeImgBack('right')" ng-click="ctrl.moveImages('right')" class="arrow-image" src="images/right-arrow.png">
+            <img alt="left arrow to view projects" id="left-arrow" ng-mouseover="ctrl.changeImg('left')" ng-mouseleave="ctrl.changeImgBack('left')" ng-click="ctrl.moveImages('left')" class="arrow-image" src="images/left-arrow.png">
+            <img alt="link to see project one details" ng-click="ctrl.openDiv('image1Div')" class="peruse-image" name="peruse1">
+            <img alt="link to see project two details"ng-click="ctrl.openDiv('image2Div')" class="peruse-image" name="peruse2">
+            <img alt="link to see project three details" ng-click="ctrl.openDiv('image3Div')" class="peruse-image" name="peruse3">
+            <img alt="left arrow to view projects" id="right-arrow" ng-mouseover="ctrl.changeImg('right')" ng-mouseleave="ctrl.changeImgBack('right')" ng-click="ctrl.moveImages('right')" class="arrow-image" src="images/right-arrow.png">
           </div>
           <div id="projects">
             <div ng-if="ctrl.images[0].div.showBandDiv" id="band-project" class="singular-project">
               <h3>Let's Form a Band</h3>
-              <img src="images/form-band-screenshot.jpg" /></br>
+              <img alt="Let's form a band project screen shot" src="images/form-band-screenshot.jpg" /></br>
               <p>Let's Form a Band is a game made with HTML, CSS, Javascript and jQuery. The game places two players against one another, each player trying to gather the necessary goods to 'win the record deal' first.</p>
               <div class="project-links">
                 <a href="https://llevenhagen.github.io/Let-s-Form-a-Band/" target="_blank">Live Link </a><span>|</span>
@@ -97,7 +100,7 @@
             </div>
             <div ng-if="ctrl.images[1].div.showDiveDiv" id="dive-project" class="singular-project">
               <h3>Dive Log</h3>
-              <img src="images/dive-log-index-page.png" /></br>
+              <img alt="Dive project screen shot"src="images/dive-log-index-page.png" /></br>
               <p>The idea behind this project was to make an informative and useful application for scuba divers to find dive sites they would like to try, or to log their own experience at a dive site. It was made with HTML, CSS, Express, and
                 MongoDB/Mongoose.</p>
               <div class="project-links">
@@ -107,7 +110,7 @@
             </div>
             <div ng-if="ctrl.images[2].div.showSpecuDiv" id="speculook" class="singular-project">
               <h3>Speculook</h3>
-              <img src="images/speculook.png" /></br>
+              <img alt="Speculook project screen shot"src="images/speculook.png" /></br>
               <p>Speculook was a group project,made for the WDIR Speculoos class of General Assembly to use as a way to keep in contact. We used HTML, CSS, and AngularJS. You may make your own account or sign in as 'Guest' with the password
                 'guest'. </p>
               <div class="project-links">
@@ -117,7 +120,7 @@
             </div>
             <div ng-if="ctrl.images[3].div.showChristDiv" id="christmas" class="singular-project">
               <h3>Christmas Wish List</h3>
-              <img src="images/christmas-screen-shot.png" /></br>
+              <img alt="Christmas wish list project screen shot"src="images/christmas-screen-shot.png" /></br>
               <p>
                 Christmas Wish List is, in affect, a Christmas gift registry where you can add what you want and your friends and family can go in and check what they plan on buying you. The project was built with React and Ruby on Rails.</p>
               <div class="project-links">
@@ -127,7 +130,7 @@
             </div>
             <div ng-if="ctrl.images[4].div.showTrDiv" id="twinritual" class="singular-project">
               <h3>Twin Ritual Band Page</h3>
-              <img src="images/twinritual-main.png" /></br>
+              <img alt="Twin Ritual Band page project screen shot"src="images/twinritual-main.png" /></br>
               <p>
                 This site was developed to serve as a merch store for the band Twin Ritual, out of San Diego, CA. I taught myself Vue.js and paired it with an express/nodeJS background. I plan on adding content/press pages and a link to paypal.</p>
               <div class="project-links">
