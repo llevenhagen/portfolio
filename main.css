@@ -234,22 +234,37 @@ hr {
 }
 
 /* PROJECTS SECTION */
-#peruse {
-  margin: 4vw auto 0;
-  background: #EFF0F2;
+#project-info-p {
+  margin-left: 1vw;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-bottom: 0;
+}
+#peruse-container {
+  margin-top: 4vw;
   border-top: .1vw solid var(--arsenic);
   border-bottom: .1vw solid var(--arsenic);
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  padding-top: 1vw;
+  padding-bottom: 0vw;
+}
+#peruse {
+  margin: 2vw auto 0;
+  background: #EFF0F2;
   width: 100%;
   height: 22vw;
   display: inline-flex;
   justify-content: space-around;
 }
 .peruse-image {
-  height: 95%;
-  width: 25%;
-  /* border: .2vw solid var(--arsenic); */
+  max-height: 95%;
+  max-width: 25%;
+  -webkit-box-shadow: 0px 0px 33px -6px var(--arsenic);
+  -moz-box-shadow: 0px 0px 33px -6px var(--arsenic);
+  box-shadow: 0px 0px 33px -6px var(--arsenic);
+}
+.peruse-image:hover{
+  transform: scale(1.5);
+  transition: .5s linear;
 }
 .arrow-image {
   width: 5.5vw;
@@ -302,10 +317,7 @@ hr {
   border: .5vw solid var(--anti-flash-white);
   /* margin-bottom: .5vw; */
 }
-#projects img:hover {
-  transform: scale(1.5);
-  transition: 1s ease-in-out;
-}
+
 #projects p {
   /* margin-top: -.1vw; */
   color: var(--arsenic);
@@ -339,17 +351,17 @@ hr {
 }
 
 /* LINKS DIVIDER */
-#projects span {
+.line {
   color:
     rgb(255, 255, 255, .1);
 }
 
-/* band project */
-#band-project {
+/* band project , june's tarot */
+#band-project, #june-tarot {
   background: #E2BE52;
 }
 
-#band-project .project-links, #band-project .project-links a {
+#band-project .project-links a, #june-tarot .project-links a {
   color: #D5AF3C;
 }
 
@@ -358,7 +370,7 @@ hr {
   background: #AEEBDC;
 }
 
-#dive-project .project-links, #dive-project .project-links a {
+#dive-project .project-links a {
   color: #62C3AB;
 }
 
@@ -368,7 +380,7 @@ hr {
   color: var(--arsenic);
 }
 
-#speculook .project-links, #speculook .project-links a {
+#speculook .project-links a {
   color: #E68E8E;
 }
 
@@ -377,7 +389,7 @@ hr {
   background: #7DA7C2;
   color: var(--arsenic);
 }
-#christmas .project-links, #christmas .project-links a {
+#christmas .project-links a {
   color: #447696;
 }
 /* Twin ritual page */
@@ -385,8 +397,15 @@ hr {
   background: #FA8B73;
   color: var(--arsenic);
 }
-#twinritual .project-links, #twinritual .project-links a {
+#twinritual .project-links a {
   color: #E46C52;
+}
+.bold {
+  font-weight: 900;
+  color: var(--arsenic);
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.2vw;
+  text-decoration: underline;
 }
 /* BACK TO TOP BUTTON */
 h4 {

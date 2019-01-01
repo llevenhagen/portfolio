@@ -74,22 +74,23 @@ app.controller('MainController', ['$http', '$location', '$anchorScroll', functio
   let image = 0;
   this.images = [];
 
-
-
-  this.images[0] = {img: 'images/band-project.png', div:
-  { showBandDiv: false,
+  this.images[0] = {img: 'images/june-tarot-main.png', div:
+  { showJuneDiv: false,
   }}
-  this.images[1] = {img: 'images/dive-project.png', div:
-  { showDiveDiv: false,
+  this.images[1] = {img: 'images/twinritual-main.png', div:
+  { showTrDiv: false,
   }}
-  this.images[2] = {img: 'images/specu-project.png', div:
+  this.images[2] = {img: 'images/speculook.png', div:
   { showSpecuDiv: false,
   }}
-  this.images[3] = {img: 'images/christmas-project.png', div:
+  this.images[3] = {img: 'images/christmas-screen-shot.png', div:
   { showChristDiv: false,
   }}
-  this.images[4] = {img: 'images/tr-project.png', div:
-  { showTrDiv: false,
+  this.images[4] = {img: 'images/form-band-screenshot.jpg', div:
+  { showBandDiv: false,
+  }}
+  this.images[5] = {img: 'images/dive-log-index-page.png', div:
+  { showDiveDiv: false,
   }}
 
 let image1Div;
@@ -139,11 +140,12 @@ console.log(imageDivArray);
 
 
 this.openDiv = function(div) {
-  this.images[0].div.showBandDiv = false;
-  this.images[1].div.showDiveDiv = false;
+  this.images[4].div.showBandDiv = false;
+  this.images[5].div.showDiveDiv = false;
   this.images[2].div.showSpecuDiv = false;
   this.images[3].div.showChristDiv = false;
-  this.images[4].div.showTrDiv = false;
+  this.images[1].div.showTrDiv = false;
+  this.images[0].div.showJuneDiv = false;
 
   console.log('you clicked one of the images', div)
   console.log(div);
