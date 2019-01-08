@@ -241,6 +241,7 @@ hr {
   margin-bottom: 0;
 }
 #peruse-container {
+  background: var(--anti-flash-white);
   margin-top: 4vw;
   border-top: .1vw solid var(--arsenic);
   border-bottom: .1vw solid var(--arsenic);
@@ -709,14 +710,15 @@ only screen and (max-width: 760px),
   }
 
   nav {
-    position: relative;
-    height: 9vw;
+    position: fixed;
+    bottom: 0;
+    height: 15vw;
     width: 100%;
     display: inline-flex;
     /* border-left: .35vw solid #6693DE; */
-    border: .35vw solid var(--anti-flash-white);
+    border: none;
     border-radius: 1vw;
-    margin: .5vw auto .5vw .4vw;
+    margin: 0;
     padding: 2vw 0vw 2vw 0vw;
     background: #202126;
   }
@@ -740,6 +742,9 @@ only screen and (max-width: 760px),
     margin: auto;
     /* background: var(--anti-flash-white); */
   }
+   .first-letter{
+    color: var(--pale-cornflower-blue);
+  }
 
   .container {
     width: 100%;
@@ -753,7 +758,7 @@ only screen and (max-width: 760px),
   }
 
   .white {
-    margin: auto auto auto .5 vw;
+    margin: auto auto 12vw;
     width: 100%;
     background: none;
   }
@@ -826,10 +831,16 @@ only screen and (max-width: 760px),
     display: block;
     padding-bottom: 5vw;
   }
+  #peruse-container {
+    margin-top: 0vw;
+  }
   #peruse {
-    margin: 2vw auto 0;
+    margin: 7vw auto 0;
     width: 100%;
     height: 35vw;
+  }
+  .peruse-image:hover{
+    transform: none;
   }
   .arrow-image {
     width: 10vw;
@@ -852,6 +863,7 @@ only screen and (max-width: 760px),
     height: 60vw;
     margin-top: 6vw;
   }
+
   #projects p {
     margin-top: 5vw;
     font-size: 3.5vw;
@@ -885,7 +897,8 @@ only screen and (max-width: 760px),
 .white footer p{
   font-size: 2vw;
   color: var(--anti-flash-white);
-  margin-top: 7vw;
+  margin-top: 0vw;
+  margin-bottom: 3vw;
 
 }
 }
