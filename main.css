@@ -898,7 +898,7 @@ only screen and (max-width: 760px),
   font-size: 2vw;
   color: var(--anti-flash-white);
   margin-top: 0vw;
-  margin-bottom: 3vw;
+  margin-bottom: 10vw;
 
 }
 }
