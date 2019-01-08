@@ -853,7 +853,7 @@ only screen and (max-width: 760px),
   }
   .singular-project {
     width: 80%;
-    height: 135vw;
+    height: 137vw;
     margin: 5vw auto 15vw;
   }
   #projects h3 {
@@ -865,7 +865,13 @@ only screen and (max-width: 760px),
     height: 60vw;
     margin-top: 6vw;
   }
-
+  .bold {
+    font-weight: 900;
+    color: var(--arsenic);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3vw;
+    text-decoration: underline;
+  }
   #projects p {
     margin-top: 5vw;
     font-size: 3.5vw;
