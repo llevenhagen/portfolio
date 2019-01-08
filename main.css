@@ -853,7 +853,7 @@ only screen and (max-width: 760px),
   }
   .singular-project {
     width: 80%;
-    height: 137vw;
+    height: 140vw;
     margin: 5vw auto 15vw;
   }
   #projects h3 {
@@ -879,7 +879,7 @@ only screen and (max-width: 760px),
   }
   .project-links {
     margin: auto;
-    margin-top: 30vw;
+    margin-top: 35vw;
   }
   .project-links a {
     font-size: 5vw;
